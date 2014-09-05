@@ -1,5 +1,6 @@
 " Use the Solarized Dark theme
 set background=light
+"let g:hybrid_use_iTerm_colors = 1
 colorscheme hybrid-light
 
 " Make Vim more useful
@@ -46,7 +47,13 @@ syntax on
 " Highlight current line
 set cursorline
 " Make tabs as wide as two spaces
-set tabstop=2
+set tabstop=4
+" Make indention four spaces
+set shiftwidth=4
+" Auto indention
+set autoindent
+" Smart indention
+set smartindent
 " Show “invisible” characters
 set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
 set list
