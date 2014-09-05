@@ -1,6 +1,6 @@
 " Use the Solarized Dark theme
-set background=dark
-colorscheme solarized
+set background=light
+colorscheme hybrid-light
 
 " Make Vim more useful
 set nocompatible
