@@ -1,10 +1,20 @@
+" Make Vim more useful
+set nocompatible
+
+" Vundle commands
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+Bundle 'gmarik/vundle'
+" Vundle plugins
+Bundle 'scrooloose/syntastic'
+Bundle 'tpope/vim-fugitive'
+
 " Use the Solarized Dark theme
 set background=light
 "let g:hybrid_use_iTerm_colors = 1
 colorscheme hybrid-light
 
-" Make Vim more useful
-set nocompatible
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
 set clipboard=unnamed
 " Enhance command-line completion
@@ -46,10 +56,12 @@ set number
 syntax on
 " Highlight current line
 set cursorline
-" Make tabs as wide as two spaces
+" Make tabs as wide as four spaces
 set tabstop=4
 " Make indention four spaces
 set shiftwidth=4
+" Always uses spaces instead of tab characters
+set expandtab
 " Auto indention
 set autoindent
 " Smart indention
