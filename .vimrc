@@ -9,6 +9,16 @@ Bundle 'gmarik/vundle'
 " Vundle plugins
 Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-fugitive'
+Bundle 'kien/ctrlp.vim'
+Bundle 'scrooloose/nerdtree'
+Bundle 'Shougo/neocomplcache.vim'
+Bundle 'editorconfig/editorconfig-vim'
+
+let g:ctrlp_custom_ignore='\v[\/](node_modules|target|dist|\.git)$'
+set wildignore+=**/node_modules/**
+
+" Maintain undo history between sessions
+set undofile
 
 " Use the Solarized Dark theme
 set background=light
